@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mizzi-net Customer Club Registration</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="icon.ico.webp" type="image/webp">
+</head>
+<body>
+    <header>
+        <img src="logo2.jpg" alt="Mizzi-net Logo">
+    </header>
+    <section>
+        <p>Join the Mizzi-net Customer Club to get exclusive offers and news about our products.</p>
+        <form id="registrationForm">
+            <div class="form-row">
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number">
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="password" id="password" placeholder="Password" required minlength="8">
+            <div id="passwordError" class="error-message"></div>
+            <input type="password" id="confirmPassword" placeholder="Verify Password" required>
+            <div id="confirmPasswordError" class="error-message"></div>
+            <button type="button" onclick="validateForm()">Register</button>
+        </form>
+    </section>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
