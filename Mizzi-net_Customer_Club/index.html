@@ -1,0 +1,56 @@
+
+<!-- Project: Mizzi-net Customer Club Registration
+* Authors: Tom Doughty (ID: 204273237), Eyasu Belay (ID: 346440969)
+* Description: 
+*     This file is css of the Mizzi-net Customer Club Registration project. -->
+
+<!DOCTYPE html>
+<!-- The above declaration defines this document as HTML5 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Character set declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport setting to ensure responsiveness -->
+    <title>Mizzi-net Customer Club Registration</title>
+    <!-- Title of the webpage -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Link to external CSS for styling -->
+    <link rel="icon" href="icon.ico.webp" type="image/webp">
+    <!-- Favicon for the website -->
+</head>
+<body>
+    <header>
+        <img src="logo2.jpg" alt="Mizzi-net Logo">
+        <!-- Logo of Mizzi-net displayed in the header -->
+    </header>
+    <section>
+        <p>Join the Mizzi-net Customer Club to get exclusive offers and news about our products.</p>
+        <!-- Paragraph explaining the purpose of the customer club -->
+        <form id="registrationForm">
+            <!-- Form for user registration -->
+            <div class="form-row">
+                <!-- Input fields for first and last names -->
+                <input type="text" id="firstName" placeholder="First Name" required>
+                <input type="text" id="lastName" placeholder="Last Name" required>
+            </div>
+            <input type="tel" id="phoneNumber" placeholder="Phone Number">
+            <!-- Input field for phone number -->
+            <input type="email" id="email" placeholder="Email Address" required>
+            <!-- Input field for email address -->
+            <input type="password" id="password" placeholder="Password" required minlength="8">
+            <!-- Input field for password with minimum length validation -->
+            <div id="passwordError" class="error-message"></div>
+            <!-- Placeholder for password error messages -->
+            <input type="password" id="confirmPassword" placeholder="Verify Password" required>
+            <!-- Input field for password verification -->
+            <div id="confirmPasswordError" class="error-message"></div>
+            <!-- Placeholder for password verification error messages -->
+            <button type="button" onclick="validateForm()">Register</button>
+            <!-- Button to submit the form -->
+        </form>
+    </section>
+    <script src="js/scripts.js"></script>
+    <!-- Link to external JavaScript file for form validation -->
+</body>
+</html>
